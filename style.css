@@ -1,0 +1,376 @@
+/*Home */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+.mountain-banner {
+    background: url("Home.webp");
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+  }
+  .overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      270deg,
+      rgba(226, 224, 211, 0) 0%,
+      rgba(0, 0, 0, 0.8687850140056023) 100%
+    );
+  }
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250.625em;
+    height: 23.8em;
+    background: url(https://terriotech.com/cloud-overlay.png) 0 100%
+      repeat-x;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 80s linear infinite;
+    z-index: 2;
+    pointer-events: none;
+    
+  }
+  @-webkit-keyframes cloudLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes cloudLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  .banner-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 10% 0 0 0;
+    z-index: 3;
+  }
+  .banner-text h1 {
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    text-shadow: 3px 3px 8px rgb(5, 5, 5), 0 0 25px rgb(5, 5, 5);
+  }
+  
+  .banner-text p {
+    font-family:'Playfair Display', serif;
+  font-size: 25px;
+  text-shadow: 2px 2px 5px rgb(5, 5, 5);
+    
+  }
+  .image-gallery {
+    background-color: #f4f4f4; 
+    padding: 50px 0; 
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    width: 90%;
+    margin: auto; 
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+   
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4c6351;
+    position: fixed;
+    top:0;
+    width:100%;
+    height:10%;
+    z-index: 4;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fdfdfd;
+    font-family: 'Roboto', sans-serif;:Arial, Helvetica, sans-serif;
+}
+
+nav ul li:hover{
+    color:rgb(250, 250, 250);
+    transform:scale(1.2)
+
+}
+
+.intro {
+    text-align: center;
+    padding: 100px 20px 50px;
+    background-color: #f9f9f9;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.image-gallery {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4c6351;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Food */
+.food-banner {
+    background: url("swiss-food-banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+   
+}
+.food-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.food-banner .banner-text {
+    z-index: 2;
+}
+.food-banner h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+.food-banner p {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.food-intro {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.food-intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.food-intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+.food-gallery {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.food-gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.food-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.food-gallery-container img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.food-gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.food-video {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.food-video iframe {
+    border-radius: 8px;
+}
+
+
+
+
+/* History  */
+
+.history-banner {
+    background: url("history_home.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    padding: 0 20px;
+}
+.history-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.history-banner .banner-text {
+    z-index: 2;
+}
+.history-banner h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+.history-banner p {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.history-section {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+.history-text {
+    flex: 1;
+    padding-right: 20px;
+}
+.history-image {
+    flex: 0.5;
+    padding-left: 20px;
+}
+.history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.history-intro {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.history-intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.history-intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+.key-events {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.key-events h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.key-events ul {
+    list-style-type: none;
+    padding: 0;
+}
+.key-events li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
